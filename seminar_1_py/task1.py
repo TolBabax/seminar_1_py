@@ -17,10 +17,11 @@
 
 # Решите для числа произвольной разрядности: произвольное количество цифр в числе.
 
-# number = int(input('Введите число: '))
+number = int(input('Введите число: '))
 summa_numbers = 0
-while number > 0:
-    summa_numbers += number % 10
-    number = number // 10
-print(f'Сумма цифр числа будет равна {summa_numbers}') 
+number_temp = number
+while number_temp > 0:
+    summa_numbers += number_temp % 10
+    number_temp = number_temp // 10
+print(f'Сумма цифр числа {number} будет равна {summa_numbers}') 
 
